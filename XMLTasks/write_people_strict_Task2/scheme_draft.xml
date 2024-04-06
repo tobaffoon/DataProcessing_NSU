@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people count="32742">
+  <person id="P397288">
+	<gender>M</gender>
+	<firstname>Ben</firstname>
+	<surname>Zric</surname>
+    <wife id="P397949"/>
+	<!--<husband id="P397949"/>-->
+    <mother id="P397949"/>
+    <father id="P397949"/>
+    <children-number>2</children-number>
+    <children>
+      <daughter id="P396655"/>
+	  <son id="P388494"/>
+	</children>
+	<siblings-number>2</siblings-number>
+	<siblings>
+		<brother id="P397289"/>
+		<sister id="P397287"/>
+	</siblings>
+  </person>
+</people>

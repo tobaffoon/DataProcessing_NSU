@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people count="4">
+  <person name="P406658">
+    <gender>M</gender>
+    <wife value="P406658"/>
+  </person>
+
+  <person name="Kaylene Startz">
+    <husband value="P411821"/>
+  </person>
+
+  <person name="Kaylene Startz">
+    <parent value="P398827"/>
+    <id value="P406658"/>
+  </person>
+
+  <person name="Kaylene Startz ">
+    <parent value="UNKNOWN"/>
+    <id value="P411821"/>
+  </person>
+</people>

@@ -1,0 +1,159 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ru.nsu.amazyar.App",
+            "projectName": "main",
+            "args": "3 https://translate.yandex.ru/ https://www.math.utah.edu/~alfeld/math/pi.html https://www.math.utah.edu/~pa/math/e.html"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Task16.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Task14.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Task15.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Task15.src.main.java.ru.nsu.amazyar.Retranslator.Main",
+            "projectName": "JavaConcurrency_4ed877d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Task8InfShared.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d",
+            "args": "4"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Task8Inf.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d",
+            "args": "4"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Task13.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Task12.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Task11.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Task10.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Task9.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Task8.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d",
+            "args": "8"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Task6.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Task1.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "Task2.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d"
+        },
+        {
+            "type": "java",
+            "name": "Main(2)",
+            "request": "launch",
+            "mainClass": "Task3.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d"
+        },
+        {
+            "type": "java",
+            "name": "Main(3)",
+            "request": "launch",
+            "mainClass": "Task4.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d"
+        },
+        {
+            "type": "java",
+            "name": "Main(4)",
+            "request": "launch",
+            "mainClass": "Task5.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d"
+        },
+        {
+            "type": "java",
+            "name": "Main(5)",
+            "request": "launch",
+            "mainClass": "Task7.src.main.java.ru.nsu.amazyar.Main",
+            "projectName": "JavaConcurrency_4ed877d",
+            "args": "8"
+        }
+    ]
+}

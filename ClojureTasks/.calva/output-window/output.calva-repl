@@ -1,0 +1,232 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Connecting using "Babashka" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd d:\NSU_programming\DataProcessing\Clojure & bb --nrepl-server 50406 & popd
+; Connecting using "undefined" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Aborting connect, error determining connect sequence.
+#'get-started.hello-repl/bar
+clj꞉get-started.hello-repl꞉> 
+; Execution error (IllegalArgumentException) at get-started.hello-repl/eval7957$bar (REPL:406).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉get-started.hello-repl꞉> 
+side-effect-1
+side-effect-2
+2
+clj꞉get-started.welcome-to-clojure꞉> 
+#'get-started.welcome-to-clojure/foo
+clj꞉get-started.welcome-to-clojure꞉> 
+#"[0-9]+"
+clj꞉get-started.welcome-to-clojure꞉> 
+#'get-started.welcome-to-clojure/foo-2
+clj꞉get-started.welcome-to-clojure꞉> 
+#function[get-started.hello-repl/greet]
+clj꞉get-started.welcome-to-clojure꞉> 
+#function[get-started.hello-repl/greet]
+clj꞉get-started.welcome-to-clojure꞉> 
+"Hello from the welcome-to-clojure namespace!"
+clj꞉get-started.welcome-to-clojure꞉> 
+nil
+clj꞉get-started.welcome-to-clojure꞉> 
+-------------------------
+clojure.core/require
+([& args])
+  Loads libs, skipping any that are already loaded. Each argument is
+  either a libspec that identifies a lib, a prefix list that identifies
+  multiple libs whose names share a common prefix, or a flag that modifies
+  how all the identified libs are loaded. Use :require in the ns macro
+  in preference to calling this directly.
+
+  Libs
+
+  A 'lib' is a named set of resources in classpath whose contents define a
+  library of Clojure code. Lib names are symbols and each lib is associated
+  with a Clojure namespace and a Java package that share its name. A lib's
+  name also locates its root directory within classpath using Java's
+  package name to classpath-relative path mapping. All resources in a lib
+  should be contained in the directory structure under its root directory.
+  All definitions a lib makes should be in its associated namespace.
+
+  'require loads a lib by loading its root resource. The root resource path
+  is derived from the lib name in the following manner:
+  Consider a lib named by the symbol 'x.y.z; it has the root directory
+  <classpath>/x/y/, and its root resource is <classpath>/x/y/z.clj, or
+  <classpath>/x/y/z.cljc if <classpath>/x/y/z.clj does not exist. The
+  root resource should contain code to create the lib's
+  namespace (usually by using the ns macro) and load any additional
+  lib resources.
+
+  Libspecs
+
+  A libspec is a lib name or a vector containing a lib name followed by
+  options expressed as sequential keywords and arguments.
+
+  Recognized options:
+  :as takes a symbol as its argument and makes that symbol an alias to the
+    lib's namespace in the current namespace.
+  :as-alias takes a symbol as its argument and aliases like :as, however
+    the lib will not be loaded. If the lib has not been loaded, a new
+    empty namespace will be created (as with create-ns).
+  :refer takes a list of symbols to refer from the namespace or the :all
+    keyword to bring in all public vars.
+
+  Prefix Lists
+
+  It's common for Clojure code to depend on several libs whose names have
+  the same prefix. When specifying libs, prefix lists can be used to reduce
+  repetition. A prefix list contains the shared prefix followed by libspecs
+  with the shared prefix removed from the lib names. After removing the
+  prefix, the names that remain must not contain any periods.
+
+  Flags
+
+  A flag is a keyword.
+  Recognized flags: :reload, :reload-all, :verbose
+  :reload forces loading of all the identified libs even if they are
+    already loaded (has no effect on libspecs using :as-alias)
+  :reload-all implies :reload and also forces loading of all libs that the
+    identified libs directly or indirectly load via require or use
+    (has no effect on libspecs using :as-alias)
+  :verbose triggers printing information about each load, alias, and refer
+
+  Example:
+
+  The following would load the libraries clojure.zip and clojure.set
+  abbreviated as 's'.
+
+  (require '(clojure zip [set :as s]))
+nil
+clj꞉get-started.welcome-to-clojure꞉> 
+; Execution error (ClassCastException) at get-started.welcome-to-clojure/eval7987 (REPL:366).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉get-started.welcome-to-clojure꞉> 
+; Syntax error compiling at (c:\Users\Mathjar\AppData\Local\Temp\betterthantomorrow.calva\hsc3bc\src\get_started\welcome_to_clojure.clj:425:3).
+; Unable to resolve symbol: add2 in this context
+clj꞉get-started.welcome-to-clojure꞉> 
+; Syntax error compiling at (c:\Users\Mathjar\AppData\Local\Temp\betterthantomorrow.calva\hsc3bc\src\get_started\welcome_to_clojure.clj:425:3).
+; Unable to resolve symbol: add2 in this context
+clj꞉get-started.welcome-to-clojure꞉> 
+#'get-started.welcome-to-clojure/add2
+clj꞉get-started.welcome-to-clojure꞉> 
+5
+clj꞉get-started.welcome-to-clojure꞉> 
+#'get-started.welcome-to-clojure/foo
+clj꞉get-started.welcome-to-clojure꞉> 
+:foo
+clj꞉get-started.welcome-to-clojure꞉> 
+#'get-started.welcome-to-clojure/foo
+clj꞉get-started.welcome-to-clojure꞉> 
+#'get-started.welcome-to-clojure/foo
+clj꞉get-started.welcome-to-clojure꞉> 
+(def add2-3 (clojure.core/fn ([arg] (+ arg 2))))
+clj꞉get-started.welcome-to-clojure꞉> 
+(if test value-if-true value-if-false)
+clj꞉get-started.welcome-to-clojure꞉> 
+(let* [or__5581__auto__ a] (if or__5581__auto__ or__5581__auto__ (clojure.core/or b)))
+clj꞉get-started.welcome-to-clojure꞉> 
+(if test (do value-if-true))
+clj꞉get-started.welcome-to-clojure꞉> 
+nil
+clj꞉get-started.welcome-to-clojure꞉> 
+(let* [or__5581__auto__ a] (if or__5581__auto__ or__5581__auto__ b))
+clj꞉get-started.welcome-to-clojure꞉> 
+(if y value-if-y (clojure.core/cond z value-if-z :else value-if-x-neither-y-nor-z))
+clj꞉get-started.welcome-to-clojure꞉> 
+(if y value-if-y (if z value-if-z (if :else value-if-x-neither-y-nor-z nil)))
+clj꞉get-started.welcome-to-clojure꞉> 
+(let*
+ [G__8016 x]
+ (case*
+  G__8016
+  0
+  0
+  value-if-x-is-neither-y-nor-z
+  {-1640523731 [z value-if-x-is-z], -1640523666 [y value-if-x-is-y]}
+  :compact
+  :hash-equiv
+  nil))
+clj꞉get-started.welcome-to-clojure꞉> 
+`x` in `do` _before_ `let`:  :namespace-x
+`x` from `let`:  :let-x
+`x` in `do`, _after_ `let`:  :namespace-x
+nil
+clj꞉get-started.welcome-to-clojure꞉> 
+#'get-started.welcome-to-clojure/an-atom
+clj꞉get-started.welcome-to-clojure꞉> 
+clojure.lang.Atom
+clj꞉get-started.welcome-to-clojure꞉> 
+[1 2 3]
+clj꞉get-started.welcome-to-clojure꞉> 
+clojure.lang.PersistentVector
+clj꞉get-started.welcome-to-clojure꞉> 
+The reader will not send this function call
+to the compiler
+nil
+clj꞉get-started.welcome-to-clojure꞉> 
+"This is not ignored"
+clj꞉get-started.welcome-to-clojure꞉> 
+"abc"
+clj꞉get-started.welcome-to-clojure꞉> 
+"ac"
+clj꞉get-started.welcome-to-clojure꞉> 
+true
+clj꞉get-started.welcome-to-clojure꞉> 
+#inst "2018-03-28T10:48:00.000-00:00"
+clj꞉get-started.welcome-to-clojure꞉> 
+java.util.Date
+clj꞉get-started.welcome-to-clojure꞉> 
+#uuid "00000000-0000-0000-0000-000000000016"
+clj꞉get-started.welcome-to-clojure꞉> 
+#uuid "00000000-0000-0000-0000-000000000016"
+clj꞉get-started.welcome-to-clojure꞉> 
+true
+clj꞉get-started.welcome-to-clojure꞉> 
+1
+; Connecting using "undefined" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Aborting connect, error determining connect sequence.
+; Evaluating file: 2primes.clj
+1
+1
+clj꞉.2primes꞉> 
+; Evaluating file: 2primes.clj
+1
+1
+clj꞉.2primes꞉> 
+; Syntax error (ClassFormatError) compiling fn* at (d:\NSU_programming\DataProcessing\Clojure\2primes.clj:1:1).
+; Illegal class name "/2primes$eval8046" in class file /2primes$eval8046
+clj꞉.2primes꞉> 
+; Evaluating file: 2primes.clj
+2
+2
+clj꞉.2primes꞉> 
+2
+2
+clj꞉.2primes꞉> 
+1
+1
+clj꞉.2primes꞉> 
+take 10 primes
+; Syntax error compiling at (d:\NSU_programming\DataProcessing\Clojure\.calva\output-window\output.calva-repl:0:0).
+; Unable to resolve symbol: primes in this context
+clj꞉.2primes꞉> 
+; Connecting using "Generic" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Connecting ...
+; Reading port file: file:///d%3A/NSU_programming/DataProcessing/Clojure/.nrepl-port ...
+; No nrepl port file found.
+; Bad url: localhost:

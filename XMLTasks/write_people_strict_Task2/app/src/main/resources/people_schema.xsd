@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="relative">
+		<xs:attribute name="id" type="xs:IDREF" use="required"/>
+	</xs:complexType>
+
+	<xs:simpleType name="gender">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="M"/>
+			<xs:enumeration value="F"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="person-name">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z]([a-z])+"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="children-list">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="son" type="relative"/>
+			<xs:element name="daughter" type="relative"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:complexType name="siblings-list">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="brother" type="relative"/>
+			<xs:element name="sister" type="relative"/>
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:complexType name="person">
+		<xs:sequence>
+			<xs:element name="gender" type="gender"/>
+			<xs:element name="firstname" type="person-name"/>
+			<xs:element name="surname" type="person-name"/>
+			<xs:choice minOccurs="0">
+				<xs:element name="wife" type="relative"/>
+				<xs:element name="husband" type="relative"/>
+			</xs:choice>
+			<xs:element name="mother" type="relative" minOccurs="0"/>
+			<xs:element name="father" type="relative" minOccurs="0"/>
+			<xs:element name="childrenNumber" type="xs:unsignedInt"/>
+			<xs:element name="children" type="children-list" minOccurs="0"/>
+			<xs:element name="siblingsNumber" type="xs:unsignedInt"/>
+			<xs:element name="siblings" type="siblings-list" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:ID" use="required"/>
+	</xs:complexType>
+	
+	<xs:element name="people">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="person" type="person" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="count" type="xs:integer" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

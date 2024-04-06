@@ -1,0 +1,1 @@
+ALTER TABLE pricings4 DROP COLUMN seat_nos

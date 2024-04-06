@@ -1,0 +1,63 @@
+==========
+[406658]: Kaylene Startz
+Gender: Female
+Father:
+        [398827]: Vi Fazio
+
+Brother:
+        [406659]: Perry Fazio
+
+Sister:
+        [411820]: Maryam Koscielniak
+
+Children Number: -1
+Siblings Number: -1
+
+Relatives with no information:
+        Spouce
+        Parents
+==========
+
+==========
+[411821]: Kaylene Startz
+Gender: Male
+Wife:
+        [406658]: Kaylene Startz
+
+Sister:
+        [411820]: Maryam Koscielniak
+
+Children Number: -1
+Siblings Number: -1
+
+Relatives with no information:
+        Parents
+==========
+
+==========
+[-1]: Kaylene Startz
+Gender: null
+Husband:
+        [411821]: Kaylene Startz
+
+Children Number: 0
+Siblings Number: 1
+
+Relatives with no information:
+        Parents
+==========
+
+IRFailed to add new Sibling to [406658]: Kaylene Startz Siblings
+
+
+
+
+
+
+Первые 2 записи - то что точно известно на данный момент, третья - информация, которую хотим добавить.
+
+Видно, что новая информация относится к первой записи, так как вторая уже содержит противоречивую информацию о супруге. Но новая информация содержит число sibling == 1, а у первой записи их уже 2.
+
+Замените (номер строки: старое_число -> новое_число)
+187841: 1->2
+644390: 1->2

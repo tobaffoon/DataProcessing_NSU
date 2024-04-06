@@ -1,0 +1,61 @@
+==========
+[385164]: Tonya Loschiavo
+Gender: null
+Brother:
+        [385165]: China Loschiavo
+
+Sister:
+        [385167]: Delia Malboeuf
+
+Children Number: 0
+Siblings Number: 2
+
+Relatives with no information:
+        Spouce
+        Parents
+==========
+
+==========
+[390327]: Tonya Loschiavo
+Gender: Male
+Mother:
+        [381247]: Willa Loschiavo
+
+Daughter:
+[397889]: Marylyn Vanosdel
+Sister:
+        [390329]: Billi Urquilla
+
+Sister:
+        [390328]: China Wozny
+
+Children Number: 1
+Siblings Number: 2
+
+Relatives with no information:
+        Spouce
+        Parents
+==========
+
+==========
+[-1]: Tonya Loschiavo
+Gender: Male
+Brother:
+        [385166]: Billi Loschiavo
+
+Children Number: -1
+Siblings Number: -1
+
+Relatives with no information:
+        Spouce
+        Parents
+==========
+
+
+
+Первые 2 записи - то что точно известно на данный момент, третья - информация, которую хотим добавить.
+
+Видно, что новая информация не подходит ни к одной записи, так как содердит информацию о брате, а требуемое число sibling уже достигнуто в обеих записях.
+
+Замените (номер строки: старое_число -> новое_число)
+37030: 2->3
